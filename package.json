@@ -2,15 +2,22 @@
   "name": "tictactoe",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://HKrzyszczak.github.io/tictacto",
   "dependencies": {
+    "firebase": "^4.7.0",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
     "react-scripts": "1.0.17"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.1.0"
   }
 }
